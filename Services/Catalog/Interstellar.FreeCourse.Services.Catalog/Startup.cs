@@ -29,6 +29,7 @@ namespace Interstellar.FreeCourse.Services.Catalog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ICategoryService, CategoryService>();//ICategoryService ile karþýlaþtýðýn zaman git CategoryService'den nesne örneði getir bana
+            services.AddScoped<ICourseService, CourseService>();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
             services.Configure<DatabaseSettings>(Configuration.GetSection("DatabaseSettings"));

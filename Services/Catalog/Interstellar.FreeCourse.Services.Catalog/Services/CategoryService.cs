@@ -4,6 +4,7 @@ using Interstellar.FreeCourse.Services.Catalog.Model;
 using Interstellar.FreeCourse.Services.Catalog.Settings;
 using Interstellar.FreeCourse.Shared.Dtos;
 using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -33,7 +34,14 @@ namespace Interstellar.FreeCourse.Services.Catalog.Services
 
         public async Task<Response<CategoryDto>> CreateAsync(Category category)
         {
-            await _categoryCollection.InsertOneAsync(category);
+            try
+            {
+                await _categoryCollection.InsertOneAsync(category);
+            }
+            catch (Exception ex)
+            {
+                return Response<CategoryDto>.Fail("Eklerken bir hata oluştu. Msj: " + ex, 200);
+            }
 
             return Response<CategoryDto>.Success(_mapper.Map<CategoryDto>(category), 200);
         }
