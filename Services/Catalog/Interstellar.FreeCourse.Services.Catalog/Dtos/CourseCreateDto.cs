@@ -1,6 +1,6 @@
 ﻿namespace Interstellar.FreeCourse.Services.Catalog.Dtos
 {
-    public class CourseCreateDto
+    internal class CourseCreateDto
     {
         public string Name { get; set; }
         public string Description { get; set; }
