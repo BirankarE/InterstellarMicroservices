@@ -32,8 +32,10 @@ namespace Interstellar.FreeCourse.Services.Catalog.Services
             return Response<List<CategoryDto>>.Success(_mapper.Map<List<CategoryDto>>(categories), 200);
         }
 
-        public async Task<Response<CategoryDto>> CreateAsync(Category category)
+        public async Task<Response<CategoryDto>> CreateAsync(CategoryDto categoryDto)
         {
+            var category = _mapper.Map<Category>(categoryDto);
+
             try
             {
                 await _categoryCollection.InsertOneAsync(category);
@@ -48,7 +50,7 @@ namespace Interstellar.FreeCourse.Services.Catalog.Services
 
         public async Task<Response<CategoryDto>> GetByIdAsync(string id)
         {
-            var category = _categoryCollection.Find<Category>(x => x.Id == id).FirstOrDefaultAsync();
+            var category = await _categoryCollection.Find<Category>(x => x.Id == id).FirstOrDefaultAsync();
 
             if (category == null)
                 return Response<CategoryDto>.Fail("Category Not Found", 404);
