@@ -81,7 +81,6 @@ namespace Interstellar.FreeCourse.Services.Catalog.Services
             try
             {
                 await _courseCollection.InsertOneAsync(newCourse);
-
             }
             catch (Exception ex)
             {
