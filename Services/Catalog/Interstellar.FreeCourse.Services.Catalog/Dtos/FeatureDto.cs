@@ -1,6 +1,6 @@
 ﻿namespace Interstellar.FreeCourse.Services.Catalog.Dtos
 {
-    internal class FeatureDto
+    public class FeatureDto
     {
         public int Duration { get; set; }
     }
