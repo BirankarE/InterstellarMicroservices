@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{4F819250-E352-47B8-A8E0-82929E5EA258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interstellar.FreeCourse.Services.Catalog", "Services\Catalog\Interstellar.FreeCourse.Services.Catalog\Interstellar.FreeCourse.Services.Catalog.csproj", "{F2BB4EBB-391C-43E6-8A00-9EB8EE6CCDFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interstellar.FreeCourse.Services.Catalog", "Services\Catalog\Interstellar.FreeCourse.Services.Catalog\Interstellar.FreeCourse.Services.Catalog.csproj", "{F2BB4EBB-391C-43E6-8A00-9EB8EE6CCDFF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2D924D64-5628-4A5F-BF61-9F0E5B973EC0}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,7 +16,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{7196E823-0CA0-48F4-A7D1-79A6EC3E4689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interstellar.FreeCourse.Shared", "Shared\Interstellar.FreeCourse.Shared\Interstellar.FreeCourse.Shared.csproj", "{AC4B2E64-B673-4E26-B52D-03D9C96E179C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interstellar.FreeCourse.Shared", "Shared\Interstellar.FreeCourse.Shared\Interstellar.FreeCourse.Shared.csproj", "{AC4B2E64-B673-4E26-B52D-03D9C96E179C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{2006EAC0-C474-4C13-9E63-44586B088DC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interstellar.FreeCourse.IdentityServer", "IdentityServer\Interstellar.FreeCourse.IdentityServer\Interstellar.FreeCourse.IdentityServer.csproj", "{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,10 @@ Global
 		{AC4B2E64-B673-4E26-B52D-03D9C96E179C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC4B2E64-B673-4E26-B52D-03D9C96E179C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC4B2E64-B673-4E26-B52D-03D9C96E179C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{4F819250-E352-47B8-A8E0-82929E5EA258} = {E0396D23-545E-41F1-B351-ED9783398079}
 		{F2BB4EBB-391C-43E6-8A00-9EB8EE6CCDFF} = {4F819250-E352-47B8-A8E0-82929E5EA258}
 		{AC4B2E64-B673-4E26-B52D-03D9C96E179C} = {7196E823-0CA0-48F4-A7D1-79A6EC3E4689}
+		{035C24E4-B626-4C0E-BB59-D4BE79C1CFCB} = {2006EAC0-C474-4C13-9E63-44586B088DC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {956AD4F0-A550-48C5-A1F2-1E156FE6F8FD}
